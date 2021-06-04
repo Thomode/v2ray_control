@@ -5,7 +5,7 @@ user_vend = "tomas.com"
 
 def clients_list():
     try:
-        with open("config_br.json", "r") as file_r:
+        with open(ruta_config, "r") as file_r:
             config = json.load(file_r)
             file_r.close()
 
@@ -39,7 +39,7 @@ def clients_search(nom_search):
     len_nom_search = len(nom_search)
 
     try:
-        with open("config_br.json", "r") as file_r:
+        with open(ruta_config, "r") as file_r:
             config = json.load(file_r)
             file_r.close()
 
